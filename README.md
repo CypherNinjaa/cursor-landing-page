@@ -121,21 +121,34 @@ Dev Tool Landing Page - Cursor/
 
 ## Screenshots
 
+### Full Page Screenshot
+
+![Cursor Landing Page Clone - Full Page](https://github.com/CypherNinjaa/cursor-landing-page/assets/screenshots/full-page.png)
+_Complete landing page showing all 11 sections with dark theme and proper spacing_
+
+### Live Demo
+
+**View the live site:** [https://cypherninjaa.github.io/cursor-landing-page/](https://cypherninjaa.github.io/cursor-landing-page/)
+
 ### Hero Section
 
-The hero section features the main headline with a gradient text effect and a mockup of the Cursor editor.
+The hero section features the main headline with subtitle styling and a detailed mockup of the Cursor editor interface showing the sidebar, chat, and code panels.
 
 ### Feature Sections
 
-Three feature blocks with alternating layouts showcase Agent, Tab autocomplete, and Ecosystem features.
+Three feature blocks with alternating two-column layouts showcase:
+
+- **Agent**: AI-powered code generation
+- **Tab**: Intelligent autocomplete
+- **Ecosystem**: GitHub, Slack, and VS Code integrations
 
 ### Testimonials
 
-Quote cards from industry leaders including Y Combinator, Stripe, and OpenAI executives.
+Six quote cards with testimonials from industry leaders including Diana Hu (Y Combinator), Patrick Collison (Stripe), Andrej Karpathy (Eureka Labs), and Greg Brockman (OpenAI).
 
 ### Footer
 
-Multi-column footer with product, resources, company, and legal links.
+Multi-column footer with four sections: Product, Resources, Company, and Legal links, plus social media icons.
 
 ## Resources
 
