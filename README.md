@@ -123,7 +123,7 @@ Dev Tool Landing Page - Cursor/
 
 ### Full Page Screenshot
 
-![Cursor Landing Page Clone - Full Page](https://github.com/CypherNinjaa/cursor-landing-page/assets/screenshots/full-page.png)
+![Cursor Landing Page Clone - Full Page](./cypherninjaa.github.io_cursor-landing-page_.png)
 _Complete landing page showing all 11 sections with dark theme and proper spacing_
 
 ### Live Demo
