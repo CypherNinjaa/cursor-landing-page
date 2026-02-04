@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor - The AI Code Editor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="download-ideKwS9dxx-1770175599241/Cursor/Cursor_Icon_6.jpeg">
+</head>
+
+<body>
+    <!--  TOP NAVIGATION BAR  -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="download-ideKwS9dxx-1770175599241/Cursor/Cursor_Logo_0.svg" alt="Cursor Logo"
+                    class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#enterprise">Enterprise</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#signin" class="nav-signin">Sign in</a>
+                <a href="#download" class="nav-download">Download</a>
+            </div>
+        </div>
+    </nav>
+
+    <!--  2. HERO SECTION  -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Built to make you extraordinarily productive,<br>
+                <span class="hero-subtitle">Cursor is the best way to code with AI.</span>
+            </h1>
+            <a href="#download" class="hero-cta">
+                <span>Download for Windows</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 12L8 4M8 12L4 8M8 12L12 8" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </a>
+        </div>
+        <div class="hero-image">
+            <div class="editor-window">
+                <div class="editor-header">
+                    <div class="window-controls">
+                        <span class="control red"></span>
+                        <span class="control yellow"></span>
+                        <span class="control green"></span>
+                    </div>
+                    <span class="editor-title">Cursor</span>
+                </div>
+                <div class="editor-body">
+                    <div class="editor-sidebar">
+                        <div class="sidebar-section">
+                            <span class="sidebar-label">IN PROGRESS 3</span>
+                            <div class="sidebar-item">
+                                <span class="item-icon">✦</span>
+                                <div class="item-content">
+                                    <span class="item-title">Enterprise Order Managem...</span>
+                                    <span class="item-status">Generating</span>
+                                </div>
+                            </div>
+                            <div class="sidebar-item">
+                                <span class="item-icon">✦</span>
+                                <div class="item-content">
+                                    <span class="item-title">Analyze Tab vs Agent Usag...</span>
+                                    <span class="item-status">Generating</span>
+                                </div>
+                            </div>
+                            <div class="sidebar-item">
+                                <span class="item-icon">✦</span>
+                                <div class="item-content">
+                                    <span class="item-title">Fix PR Comments Fetching I...</span>
+                                    <span class="item-status">Generating</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="editor-main">
+                        <div class="editor-tabs">
+                            <span class="tab">PyTorch MNIST Experiments</span>
+                        </div>
+                        <div class="editor-chat">
+                            <div class="chat-message">
+                                <p>Add mixed precision training, learning rate scheduling, and proper validation. Also
+                                    create an experiment config system so I can easily run different hyperparameter
+                                    settings.</p>
+                            </div>
+                            <div class="file-badge">
+                                <span class="file-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                        <polyline points="14 2 14 8 20 8"></polyline>
+                                    </svg></span>
+                                <span class="file-name">train_model.py</span>
+                                <span class="file-changes">+156 -34</span>
+                            </div>
+                            <div class="chat-message">
+                                <p>Now let me update the evaluation module to save results and generate a detailed
+                                    report:</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="editor-code">
+                        <div class="code-tabs">
+                            <span class="tab active">train_model.py</span>
+                            <span class="tab">run_experiment.py</span>
+                        </div>
+                        <div class="code-content">
+                            <pre><code><span class="code-keyword">import</span> torch
+<span class="code-keyword">import</span> torch.nn <span class="code-keyword">as</span> nn
+<span class="code-added">+ <span class="code-keyword">from</span> torch.utils.data <span class="code-keyword">import</span> DataL...</span>
+<span class="code-added">+ <span class="code-keyword">from</span> torch.utils.data <span class="code-keyword">import</span> DataL...</span>
+<span class="code-added">+ <span class="code-keyword">from</span> torchvision <span class="code-keyword">import</span> datasets</span>
+<span class="code-added">+ <span class="code-keyword">from</span> torchvision <span class="code-keyword">import</span> datasets,</span>
+<span class="code-added">+ <span class="code-keyword">from</span> tqdm <span class="code-keyword">import</span> tqdm</span>
+<span class="code-added">+ <span class="code-keyword">from</span> torchvision <span class="code-keyword">import</span> tqdm</span>
+<span class="code-keyword">import</span> yaml</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--   TRUSTED BY / LOGOS  -->
+    <section class="trusted-by">
+        <h2 class="trusted-title">Trusted every day by millions of professional developers.</h2>
+        <div class="logo-row">
+            <div class="company-logo">
+                <svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <text x="10" y="28" fill="#888" font-family="Inter" font-size="16" font-weight="600">OpenAI</text>
+                </svg>
+            </div>
+            <div class="company-logo">
+                <svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <text x="10" y="28" fill="#888" font-family="Inter" font-size="16" font-weight="600">Stripe</text>
+                </svg>
+            </div>
+            <div class="company-logo">
+                <svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <text x="10" y="28" fill="#888" font-family="Inter" font-size="16" font-weight="600">Shopify</text>
+                </svg>
+            </div>
+            <div class="company-logo">
+                <svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <text x="10" y="28" fill="#888" font-family="Inter" font-size="16"
+                        font-weight="600">Instacart</text>
+                </svg>
+            </div>
+            <div class="company-logo">
+                <svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <text x="10" y="28" fill="#888" font-family="Inter" font-size="16" font-weight="600">Samsung</text>
+                </svg>
+            </div>
+            <div class="company-logo">
+                <svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <text x="10" y="28" fill="#888" font-family="Inter" font-size="16"
+                        font-weight="600">Midjourney</text>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!--  4. FEATURE SECTIONS (3 BLOCKS)  -->
+    <section class="features" id="features">
+        <!-- Feature 1: Agent -->
+        <div class="feature-block">
+            <div class="feature-text">
+                <h3 class="feature-title">Agent turns ideas into code</h3>
+                <p class="feature-description">A human-AI programmer, orders of magnitude more effective than any
+                    developer alone.</p>
+                <a href="#" class="feature-link">Learn about Agent →</a>
+            </div>
+            <div class="feature-image">
+                <div class="feature-demo agent-demo">
+                    <div class="demo-window">
+                        <div class="demo-header">
+                            <span class="demo-title">Agent Mode</span>
+                        </div>
+                        <div class="demo-content">
+                            <div class="agent-message">
+                                <div class="agent-icon">✦</div>
+                                <div class="agent-text">
+                                    <p>I'll help you build a complete authentication system with JWT tokens, password
+                                        hashing, and session management.</p>
+                                </div>
+                            </div>
+                            <div class="code-preview">
+                                <pre><code><span class="code-keyword">async def</span> <span class="code-function">authenticate</span>(user, password):
+    <span class="code-keyword">if</span> verify_password(password, user.hash):
+        <span class="code-keyword">return</span> create_jwt_token(user.id)</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feature 2: Tab Autocomplete -->
+        <div class="feature-block reverse">
+            <div class="feature-text">
+                <h3 class="feature-title">Magically accurate autocomplete</h3>
+                <p class="feature-description">Our custom Tab model predicts your next action with striking speed and
+                    precision.</p>
+                <a href="#" class="feature-link">Learn about Tab →</a>
+            </div>
+            <div class="feature-image">
+                <div class="feature-demo tab-demo">
+                    <div class="demo-window">
+                        <div class="demo-header">
+                            <span class="demo-title">Tab Autocomplete</span>
+                        </div>
+                        <div class="demo-content">
+                            <div class="autocomplete-preview">
+                                <pre><code><span class="code-keyword">function</span> <span class="code-function">calculateTotal</span>(items) {
+    <span class="code-keyword">return</span> items.reduce((sum, item) => {
+        <span class="code-ghost">sum + item.price * item.quantity</span>
+    }, 0);
+}</code></pre>
+                                <div class="tab-hint">
+                                    <span class="tab-key">Tab</span>
+                                    <span>to accept</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feature 3: Ecosystem -->
+        <div class="feature-block">
+            <div class="feature-text">
+                <h3 class="feature-title">Everywhere software gets built</h3>
+                <p class="feature-description">Cursor is in GitHub reviewing your PRs, a teammate in Slack, and anywhere
+                    else you work.</p>
+                <a href="#" class="feature-link">Learn about Cursor's ecosystem →</a>
+            </div>
+            <div class="feature-image">
+                <div class="feature-demo ecosystem-demo">
+                    <div class="ecosystem-grid">
+                        <div class="ecosystem-card github">
+                            <div class="card-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                                </svg>
+                            </div>
+                            <span class="card-label">GitHub</span>
+                        </div>
+                        <div class="ecosystem-card slack">
+                            <div class="card-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M5.042 15.165a2.528 2.528 0 0 1-2.52 2.523A2.528 2.528 0 0 1 0 15.165a2.527 2.527 0 0 1 2.522-2.52h2.52v2.52zM6.313 15.165a2.527 2.527 0 0 1 2.521-2.52 2.527 2.527 0 0 1 2.521 2.52v6.313A2.528 2.528 0 0 1 8.834 24a2.528 2.528 0 0 1-2.521-2.522v-6.313zM8.834 5.042a2.528 2.528 0 0 1-2.521-2.52A2.528 2.528 0 0 1 8.834 0a2.528 2.528 0 0 1 2.521 2.522v2.52H8.834zM8.834 6.313a2.528 2.528 0 0 1 2.521 2.521 2.528 2.528 0 0 1-2.521 2.521H2.522A2.528 2.528 0 0 1 0 8.834a2.528 2.528 0 0 1 2.522-2.521h6.312zM18.956 8.834a2.528 2.528 0 0 1 2.522-2.521A2.528 2.528 0 0 1 24 8.834a2.528 2.528 0 0 1-2.522 2.521h-2.522V8.834zM17.688 8.834a2.528 2.528 0 0 1-2.523 2.521 2.527 2.527 0 0 1-2.52-2.521V2.522A2.527 2.527 0 0 1 15.165 0a2.528 2.528 0 0 1 2.523 2.522v6.312zM15.165 18.956a2.528 2.528 0 0 1 2.523 2.522A2.528 2.528 0 0 1 15.165 24a2.527 2.527 0 0 1-2.52-2.522v-2.522h2.52zM15.165 17.688a2.527 2.527 0 0 1-2.52-2.523 2.526 2.526 0 0 1 2.52-2.52h6.313A2.527 2.527 0 0 1 24 15.165a2.528 2.528 0 0 1-2.522 2.523h-6.313z" />
+                                </svg>
+                            </div>
+                            <span class="card-label">Slack</span>
+                        </div>
+                        <div class="ecosystem-card vscode">
+                            <div class="card-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M23.15 2.587L18.21.21a1.494 1.494 0 0 0-1.705.29l-9.46 8.63-4.12-3.128a.999.999 0 0 0-1.276.057L.327 7.261A1 1 0 0 0 .326 8.74L3.899 12 .326 15.26a1 1 0 0 0 .001 1.479L1.65 17.94a.999.999 0 0 0 1.276.057l4.12-3.128 9.46 8.63a1.492 1.492 0 0 0 1.704.29l4.942-2.377A1.5 1.5 0 0 0 24 20.06V3.939a1.5 1.5 0 0 0-.85-1.352zm-5.146 14.861L10.826 12l7.178-5.448v10.896z" />
+                                </svg>
+                            </div>
+                            <span class="card-label">VS Code</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--   FEATURE CARDS SECTION  -->
+    <section class="feature-cards">
+        <h2 class="section-title">Stay on the frontier</h2>
+        <div class="cards-grid">
+            <div class="card">
+                <div class="card-icon-wrapper">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 4L4 10V22L16 28L28 22V10L16 4Z" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 16L28 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M16 16V28" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M16 16L4 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <h3 class="card-title">Access the best models</h3>
+                <p class="card-description">Choose between every cutting-edge model from OpenAI, Anthropic, Gemini, and
+                    xAI.</p>
+                <a href="#" class="card-link">Explore models ↗</a>
+            </div>
+            <div class="card">
+                <div class="card-icon-wrapper">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2" />
+                        <path d="M16 10V16L20 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <h3 class="card-title">Complete codebase understanding</h3>
+                <p class="card-description">Cursor learns how your codebase works, no matter the scale or complexity.
+                </p>
+                <a href="#" class="card-link">Learn about semantic search ↗</a>
+            </div>
+            <div class="card">
+                <div class="card-icon-wrapper">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 8H28" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        <path d="M4 16H28" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        <path d="M4 24H28" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        <circle cx="10" cy="8" r="2" fill="currentColor" />
+                        <circle cx="22" cy="16" r="2" fill="currentColor" />
+                        <circle cx="16" cy="24" r="2" fill="currentColor" />
+                    </svg>
+                </div>
+                <h3 class="card-title">Develop enduring software</h3>
+                <p class="card-description">Trusted by over half of the Fortune 500 to accelerate development, securely
+                    and at scale.</p>
+                <a href="#" class="card-link">Explore enterprise →</a>
+            </div>
+        </div>
+    </section>
+
+    <!--   TESTIMONIALS  -->
+    <section class="testimonials">
+        <h2 class="section-title">The new way to build software.</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="quote-icon">"</div>
+                <p class="testimonial-text">It was night and day from one batch to another, adoption went from single
+                    digits to over 80%. It just spread like wildfire, all the best builders were using Cursor.</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">DH</div>
+                    <div class="author-info">
+                        <span class="author-name">Diana Hu</span>
+                        <span class="author-role">General Partner, Y Combinator</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="quote-icon">"</div>
+                <p class="testimonial-text">The most useful AI tool that I currently pay for, hands down, is Cursor.
+                    It's fast, autocompletes when and where you need it to, handles brackets properly, sensible keyboard
+                    shortcuts, bring-your-own-model... everything is well put together.</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">S</div>
+                    <div class="author-info">
+                        <span class="author-name">shadcn</span>
+                        <span class="author-role">Creator of shadcn/ui</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="quote-icon">"</div>
+                <p class="testimonial-text">The best LLM applications have an autonomy slider: you control how much
+                    independence to give the AI. In Cursor, you can do Tab completion, Cmd+K for targeted edits, or you
+                    can let it rip with the full autonomy agentic version.</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">AK</div>
+                    <div class="author-info">
+                        <span class="author-name">Andrej Karpathy</span>
+                        <span class="author-role">CEO, Eureka Labs</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="quote-icon">"</div>
+                <p class="testimonial-text">Cursor quickly grew from hundreds to thousands of extremely enthusiastic
+                    Stripe employees. We spend more on R&D and software creation than any other undertaking, and there's
+                    significant economic outcomes when making that process more efficient and productive.</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">PC</div>
+                    <div class="author-info">
+                        <span class="author-name">Patrick Collison</span>
+                        <span class="author-role">Co-Founder & CEO, Stripe</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="quote-icon">"</div>
+                <p class="testimonial-text">It's official. I hate vibe coding. I love Cursor tab coding. It's wild.</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">TP</div>
+                    <div class="author-info">
+                        <span class="author-name">ThePrimeagen</span>
+                        <span class="author-role">@ThePrimeagen</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="quote-icon">"</div>
+                <p class="testimonial-text">It's definitely becoming more fun to be a programmer. It's less about
+                    digging through pages and more about what you want to happen. We are at the 1% of what's possible,
+                    and it's in interactive experiences like Cursor where models like GPT-5 shine brightest.</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">GB</div>
+                    <div class="author-info">
+                        <span class="author-name">Greg Brockman</span>
+                        <span class="author-role">President, OpenAI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--   USE CASES / STORIES (BLOG HIGHLIGHTS)  -->
+    <section class="use-cases">
+        <h2 class="section-title">Recent highlights</h2>
+        <div class="use-cases-grid">
+            <a href="#" class="use-case-card">
+                <div class="use-case-image">
+                    <div class="use-case-placeholder">
+                        <span class="placeholder-icon">2.0</span>
+                    </div>
+                </div>
+                <div class="use-case-content">
+                    <h3 class="use-case-title">Introducing Cursor 2.0 and Composer</h3>
+                    <p class="use-case-description">A new interface and our first coding model, both purpose-built for
+                        working with agents.</p>
+                    <span class="use-case-meta">Product · Oct 29, 2025</span>
+                </div>
+            </a>
+            <a href="#" class="use-case-card">
+                <div class="use-case-image">
+                    <div class="use-case-placeholder">
+                        <span class="placeholder-icon">RL</span>
+                    </div>
+                </div>
+                <div class="use-case-content">
+                    <h3 class="use-case-title">Improving Cursor Tab with online RL</h3>
+                    <p class="use-case-description">Our new Tab model makes 21% fewer suggestions while having 28%
+                        higher accept rate.</p>
+                    <span class="use-case-meta">Research · Sep 12, 2025</span>
+                </div>
+            </a>
+            <a href="#" class="use-case-card">
+                <div class="use-case-image">
+                    <div class="use-case-placeholder">
+                        <span class="placeholder-icon">1.5x</span>
+                    </div>
+                </div>
+                <div class="use-case-content">
+                    <h3 class="use-case-title">1.5x faster MoE training with custom MXFP8 kernels</h3>
+                    <p class="use-case-description">Achieving a 3.5x MoE layer speedup with a complete rebuild for
+                        Blackwell GPUs.</p>
+                    <span class="use-case-meta">Research · Aug 29, 2025</span>
+                </div>
+            </a>
+        </div>
+        <a href="#" class="view-more-link">View more posts →</a>
+    </section>
+
+    <!--   CHANGELOG / UPDATES  -->
+    <section class="changelog">
+        <h2 class="section-title">Changelog</h2>
+        <div class="changelog-list">
+            <a href="#" class="changelog-item">
+                <div class="changelog-version">2.4</div>
+                <div class="changelog-content">
+                    <span class="changelog-date">Jan 22, 2026</span>
+                    <h3 class="changelog-title">Subagents, Skills, and Image Generation</h3>
+                </div>
+            </a>
+            <a href="#" class="changelog-item">
+                <div class="changelog-version"></div>
+                <div class="changelog-content">
+                    <span class="changelog-date">Jan 16, 2026</span>
+                    <h3 class="changelog-title">CLI Agent Modes and Cloud Handoff</h3>
+                </div>
+            </a>
+            <a href="#" class="changelog-item">
+                <div class="changelog-version"></div>
+                <div class="changelog-content">
+                    <span class="changelog-date">Jan 8, 2026</span>
+                    <h3 class="changelog-title">New CLI Features and Improved CLI Performance</h3>
+                </div>
+            </a>
+            <a href="#" class="changelog-item">
+                <div class="changelog-version">2.3</div>
+                <div class="changelog-content">
+                    <span class="changelog-date">Dec 22, 2025</span>
+                    <h3 class="changelog-title">Layout Customization and Stability Improvements</h3>
+                </div>
+            </a>
+        </div>
+        <a href="#" class="view-more-link">See what's new in Cursor →</a>
+    </section>
+
+    <!--   TEAM / ABOUT  -->
+    <section class="about" id="enterprise">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="download-ideKwS9dxx-1770175599241/Cursor/Cursor_Banner_7.jpeg" alt="Cursor Team"
+                    class="team-photo">
+            </div>
+            <div class="about-content">
+                <h2 class="about-title">Cursor is an applied team focused on building the future of coding.</h2>
+                <a href="#" class="about-cta">Join us →</a>
+            </div>
+        </div>
+    </section>
+
+    <!--   FINAL CTA  -->
+    <section class="final-cta">
+        <h2 class="final-cta-title">Try Cursor now.</h2>
+        <a href="#download" class="final-cta-button">
+            <span>Download for Windows</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 12L8 4M8 12L4 8M8 12L12 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </a>
+    </section>
+
+    <!--  FOOTER  -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-column">
+                    <h4 class="footer-heading">Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Enterprise</a></li>
+                        <li><a href="#">Web Agents</a></li>
+                        <li><a href="#">Bugbot</a></li>
+                        <li><a href="#">CLI</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Download</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Changelog</a></li>
+                        <li><a href="#">Docs <span class="external">↗</span></a></li>
+                        <li><a href="#">Learn <span class="external">↗</span></a></li>
+                        <li><a href="#">Forum <span class="external">↗</span></a></li>
+                        <li><a href="#">Status <span class="external">↗</span></a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Workshops</a></li>
+                        <li><a href="#">Students</a></li>
+                        <li><a href="#">Brand</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Data Use</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-info">
+                    <span class="copyright">© 2026 Cursor</span>
+                    <span class="soc2"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" style="vertical-align: middle; margin-right: 4px;">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>SOC 2 Certified</span>
+                    <span class="language"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" style="vertical-align: middle; margin-right: 4px;">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                            </path>
+                        </svg>English</span>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link" aria-label="X (Twitter)">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="YouTube">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
